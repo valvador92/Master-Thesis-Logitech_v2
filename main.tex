@@ -1,0 +1,144 @@
+\documentclass{rapport}
+
+% level of subsection
+\setcounter{secnumdepth}{5}
+
+% level table of content
+\setcounter{tocdepth}{5}
+
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{subfloat}
+\usepackage{subcaption}
+\usepackage{multicol,multirow}
+
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+
+% \usepackage[numbers]{natbib}
+
+\usepackage{svg}
+
+\usepackage{acronym}
+
+% \usepackage[square,numbers]{natbib}
+% \bibliographystyle{abbrvnat}
+% \usepackage[%
+%numbib, % uncomment to have the bibliography numbered
+% nottoc]{tocbibind} % add the bibliography in the table of content
+
+
+
+% set interligne
+% \renewcommand{\baselinestretch}{1.1} 
+\setstretch{1.1}
+
+%---------------------------------%
+% Cover
+%---------------------------------%
+
+\author{ Valentin \textsc{Morel}}
+
+\footauthor{ V. \textsc{Morel}}
+\semester{Master Project}
+\cours{2019-2020 - Microengineering School}
+%\assistant{Dr. Arash\textsc{Salarian} }
+
+\teacher{
+Professor Jean-Philippe \textsc{Thiran} \\ Dr. Arash \textsc{Salarian}}
+
+
+\title{3D video experiment in a meeting room scenario}
+\subtitle{Logitech Europe S.A.}
+%\remark{Confidential document}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+\clearpage
+\pagenumbering{roman}
+\newpage
+\input{acknowledgments.tex}
+\newpage
+\input{abstract.tex}
+
+% \input{acknowledgments.tex}
+% \newpage
+% \input{abstract.tex}
+% \newpage
+% \tableofcontents
+
+% \BeginNoToc
+% \newpage
+% \listoffigures
+% \newpage
+% \listoftables
+% \newpage
+% \thispagestyle{plain}
+% \renewcommand{\nomname}{List of Symbols}
+% \printnomenclature
+% \EndNoToc
+% \newpage
+
+% \pagenumbering{arabic}
+
+\tableofcontents
+% \newpage
+% \listoffigures
+% \newpage
+% \listoftables
+% \newpage
+% \thispagestyle{plain}
+% \renewcommand{\nomname}{List of Symbols}
+
+
+\BeginNoToc
+\newpage
+\listoffigures
+\newpage
+\listoftables
+\newpage
+\input{accronym}
+\thispagestyle{plain}
+% \renewcommand{\nomname}{List of Symbols}
+% \printnomenclature
+\EndNoToc
+\newpage
+
+\pagenumbering{arabic}
+\input{introduction/introduction.tex}
+\newpage
+\input{3d_scene_state_of_the_art/3d_scene_state_of_the_art.tex}
+\newpage
+\input{general_method/general_method.tex}
+\newpage
+\input{apparatus/apparatus.tex}
+\newpage
+\input{calibration/calibration.tex}
+\newpage
+\input{visual_enhancement/visual_enhancement.tex}
+\newpage
+\input{general_discussion/general_discussion.tex}
+\newpage
+\input{use_case_scenario/use_case_scenario.tex}
+\newpage
+\input{conclusion/conclusion.tex}
+\newpage
+
+\bibliographystyle{IEEEtran}
+% \bibliographystyle{IEEEtranN}
+% \bibliographystyle{unsrt}
+% \bibliographystyle{apalike}
+% \bibliographystyle{plainnat}
+\bibliography{myreferences.bib}
+
+% \bibliographystyle{apalike}
+% \bibliography{references.bib}
+
+% \newpage
+% \input{annex/annex.tex}
+
+\end{document}
+

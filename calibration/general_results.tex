@@ -1,0 +1,24 @@
+\subsection{General Result}
+
+Table \ref{tab:sumary_registration} presents the summary of the results of the different approaches developed in the previous sections. The proposed method gives the best result.
+
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c||c|c|c}
+\textbf{Mean Absolute Error of} & \textbf{X - coordinate} & \textbf{Y - coordinate} & \textbf{Z - coordinate} \\ \hline \hline
+\textbf{\begin{tabular}[c]{@{}c@{}}Global registration\\ Experiment 2 {[}mm{]}\end{tabular}} & 3.04 & 0.57 & 2.40 \\ \hline
+\textbf{\begin{tabular}[c]{@{}c@{}}Global registration\\ Experiment 3 {[}mm{]}\end{tabular}} & 13.81 & 1.29 & 1.33 \\ \hline \hline
+\textbf{\begin{tabular}[c]{@{}c@{}}Point-to-plane ICP\\ Experiment 1 {[}mm{]}\end{tabular}} & 6.87 & 9.56 & 15.03 \\ \hline
+\textbf{\begin{tabular}[c]{@{}c@{}}Point-to-plane ICP\\ Experiment 2 {[}mm{]}\end{tabular}} & 3.58 & 5.88 & 7.11 \\ \hline \hline
+\textbf{\begin{tabular}[c]{@{}c@{}}Point-to-point ICP\\ Experiment 1 {[}mm{]}\end{tabular}} & 7.51 & 14.58 & 19.12 \\ \hline
+\textbf{\begin{tabular}[c]{@{}c@{}}Point-to-point ICP\\ Experiment 2 {[}mm{]}\end{tabular}} & 5.63 & 10.92 & 16.08 \\ \hline \hline
+\textbf{\begin{tabular}[c]{@{}c@{}}Coloured ICP\\ Experiment 1 {[}mm{]}\end{tabular}} & 2.17 & 2.67 & 2.51 \\ \hline
+\textbf{\begin{tabular}[c]{@{}c@{}}Coloured ICP\\ Experiment 2 {[}mm{]}\end{tabular}} & 1.11 & 1.06 & 4.60 \\ \hline \hline
+\textbf{\begin{tabular}[c]{@{}c@{}}Stereo\\ calibration\end{tabular}} & 24.07 & 1.09 & 4.54 \\ \hline \hline
+\textbf{\begin{tabular}[c]{@{}c@{}}Proposed\\ method\end{tabular}} & \textbf{0.90} & \textbf{0.48} & \textbf{0.40}
+\end{tabular}
+\caption{Summary of the mean absolute error of all the evaluated methods}
+\label{tab:sumary_registration}
+\end{table}
+
